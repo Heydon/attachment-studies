@@ -1,0 +1,123 @@
+html {
+  font-family: Asap, sans-serif;
+  font-size: calc(1em + 0.5vw);
+  line-height: 1.5;
+}
+
+body {
+  background: #879bc2;
+  color: #333;
+  padding: 1.5rem;
+}
+
+a {
+  color: #65748b;
+  text-decoration: none;
+}
+
+p a, li a {
+  text-decoration: none;
+	text-shadow: 0.05em 0 0 #fff, -0.05em 0 0 #fff, 0 0.05em 0 #fff, 0 -0.05em 0 #fff, 0.1em 0 0 #fff, -0.1em 0 0 #fff, 0 0.1em 0 #fff, 0 -0.1em 0 #fff;
+	background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
+	background-repeat: repeat-x;
+	background-position: bottom 0.05em center;
+	background-size: 100% 0.05em;
+}
+
+a:focus {
+  outline: 3px solid #aebcd4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+body * + * {
+  margin-top: 1.5rem;
+}
+
+body li + li {
+  margin-top: 0;
+}
+
+p + p, h3 + p {
+  margin-top: 0.75em;
+}
+
+body > div {
+  padding: 1.5em;
+  max-width: 40em;
+  margin: 0 auto;
+  background: #fcfcfb;
+  border: 1px solid #777;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.125;
+}
+
+h2 {
+  border-bottom: 1px solid #aebcd4;
+  padding-bottom: 0.25em;
+}
+
+h1 span, h1 em {
+  display: block;
+  margin-top: 0;
+}
+
+header img, header > div {
+  display: inline-block;
+}
+
+header img {
+  height: 10em;
+}
+
+h1 + p {
+  margin-top: 0;
+}
+
+nav {
+  background: #dfeff8;
+  padding: 1.5em;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li + li {
+  margin-top: 0.5em;
+}
+
+nav li:before {
+  content: '\2b07';
+  display: inline-block;
+  margin-right: 0.25em;
+  color: #aebcd4;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+nav ul {
+  margin-top: 0.5em;
+}
+
+nav h2 {
+  border: 0;
+  padding: 0;
+}
+
+body > div, nav {
+  border-radius: 0.25em;
+}
+
+nav a {
+  text-shadow: 0.05em 0 0 #dfeff8, -0.05em 0 0 #dfeff8, 0 0.05em 0 #dfeff8, 0 -0.05em 0 #dfeff8, 0.1em 0 0 #dfeff8, -0.1em 0 0 #dfeff8, 0 0.1em 0 #dfeff8, 0 -0.1em 0 #dfeff8;
+}
