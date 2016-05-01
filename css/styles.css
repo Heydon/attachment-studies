@@ -11,8 +11,13 @@ body {
 }
 
 a {
-  color: #65748b;
+  color: #54637a;
   text-decoration: none;
+}
+
+[href^="https"], [href^="mailto"] {
+  word-break: break-all;
+  hyphens: auto;
 }
 
 p a, li a {
@@ -28,10 +33,21 @@ a:focus {
   outline: 3px solid #aebcd4;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  max-height: 450px;
+}
+
+figure {
+  text-align: center;
+}
+
 * {
   margin: 0;
   padding: 0;
   font-family: inherit;
+  box-sizing: border-box;
 }
 
 body * + * {
@@ -74,7 +90,7 @@ header img, header > div {
 }
 
 header img {
-  height: 10em;
+  height: 12em;
 }
 
 h1 + p {
@@ -83,6 +99,11 @@ h1 + p {
 
 nav {
   background: #dfeff8;
+  padding: 1.5em;
+}
+
+aside {
+  background: #d7f4d7;
   padding: 1.5em;
 }
 
@@ -120,4 +141,45 @@ body > div, nav {
 
 nav a {
   text-shadow: 0.05em 0 0 #dfeff8, -0.05em 0 0 #dfeff8, 0 0.05em 0 #dfeff8, 0 -0.05em 0 #dfeff8, 0.1em 0 0 #dfeff8, -0.1em 0 0 #dfeff8, 0 0.1em 0 #dfeff8, 0 -0.1em 0 #dfeff8;
+}
+
+aside a {
+  text-shadow: 0.05em 0 0 #d7f4d7, -0.05em 0 0 #d7f4d7, 0 0.05em 0 #d7f4d7, 0 -0.05em 0 #d7f4d7, 0.1em 0 0 #d7f4d7, -0.1em 0 0 #d7f4d7, 0 0.1em 0 #d7f4d7, 0 -0.1em 0 #d7f4d7;
+}
+
+@media (max-width: 945px) {
+
+  header img {
+    height: 10em;
+  }
+
+  h1 + p span {
+    display: block;
+  }
+
+}
+
+@media (max-width: 690px) {
+
+  html {
+    font-size: 1em;
+  }
+
+  body {
+    padding: 0.75em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  header div, header > img {
+    display: block;
+    margin: 0 auto;
+  }
+
 }
